@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="79cff571-6ef5-4023-9fd8-d8804f0322b7" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Xp0ouhHAcE3LejYvhP5AwAd1fC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Lexer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PythonLexer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lexer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Lexer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="79cff571-6ef5-4023-9fd8-d8804f0322b7" name="Default Changelist" comment="" />
+      <created>1581727906608</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581727906608</updated>
+      <workItem from="1581727909780" duration="662000" />
+      <workItem from="1581886142459" duration="64000" />
+      <workItem from="1581886219515" duration="15120000" />
+      <workItem from="1581904666744" duration="3479000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="418" y="193" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581886381198">
+      <screen x="0" y="27" width="1920" height="1016" />
+    </state>
+    <state x="418" y="193" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1016@0.27.1920.1016" timestamp="1581886381198" />
+    <state x="643" y="263" width="624" height="551" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1581886179573">
+      <screen x="0" y="27" width="1920" height="1016" />
+    </state>
+    <state x="643" y="263" width="624" height="551" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.27.1920.1016@0.27.1920.1016" timestamp="1581886179573" />
+    <state width="1874" height="336" key="GridCell.Tab.0.bottom" timestamp="1581908181965">
+      <screen x="3840" y="0" width="1920" height="1080" />
+    </state>
+    <state width="937" height="325" key="GridCell.Tab.0.bottom/0.27.1920.1016@0.27.1920.1016" timestamp="1581904565527" />
+    <state width="1874" height="336" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1016/3840.0.1920.1080@3840.0.1920.1080" timestamp="1581908181965" />
+    <state width="1874" height="336" key="GridCell.Tab.0.center" timestamp="1581908181965">
+      <screen x="3840" y="0" width="1920" height="1080" />
+    </state>
+    <state width="937" height="325" key="GridCell.Tab.0.center/0.27.1920.1016@0.27.1920.1016" timestamp="1581904565525" />
+    <state width="1874" height="336" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1016/3840.0.1920.1080@3840.0.1920.1080" timestamp="1581908181965" />
+    <state width="1874" height="336" key="GridCell.Tab.0.left" timestamp="1581908181964">
+      <screen x="3840" y="0" width="1920" height="1080" />
+    </state>
+    <state width="937" height="325" key="GridCell.Tab.0.left/0.27.1920.1016@0.27.1920.1016" timestamp="1581904565524" />
+    <state width="1874" height="336" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1016/3840.0.1920.1080@3840.0.1920.1080" timestamp="1581908181964" />
+    <state width="1874" height="336" key="GridCell.Tab.0.right" timestamp="1581908181965">
+      <screen x="3840" y="0" width="1920" height="1080" />
+    </state>
+    <state width="937" height="325" key="GridCell.Tab.0.right/0.27.1920.1016@0.27.1920.1016" timestamp="1581904565526" />
+    <state width="1874" height="336" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1016/3840.0.1920.1080@3840.0.1920.1080" timestamp="1581908181965" />
+    <state width="1874" height="336" key="GridCell.Tab.1.bottom" timestamp="1581908182334">
+      <screen x="3840" y="0" width="1920" height="1080" />
+    </state>
+    <state width="937" height="325" key="GridCell.Tab.1.bottom/0.27.1920.1016@0.27.1920.1016" timestamp="1581904565531" />
+    <state width="1874" height="336" key="GridCell.Tab.1.bottom/1920.0.1920.1080/0.27.1920.1016/3840.0.1920.1080@3840.0.1920.1080" timestamp="1581908182334" />
+    <state width="1874" height="336" key="GridCell.Tab.1.center" timestamp="1581908182333">
+      <screen x="3840" y="0" width="1920" height="1080" />
+    </state>
+    <state width="937" height="325" key="GridCell.Tab.1.center/0.27.1920.1016@0.27.1920.1016" timestamp="1581904565529" />
+    <state width="1874" height="336" key="GridCell.Tab.1.center/1920.0.1920.1080/0.27.1920.1016/3840.0.1920.1080@3840.0.1920.1080" timestamp="1581908182333" />
+    <state width="1874" height="336" key="GridCell.Tab.1.left" timestamp="1581908182333">
+      <screen x="3840" y="0" width="1920" height="1080" />
+    </state>
+    <state width="937" height="325" key="GridCell.Tab.1.left/0.27.1920.1016@0.27.1920.1016" timestamp="1581904565528" />
+    <state width="1874" height="336" key="GridCell.Tab.1.left/1920.0.1920.1080/0.27.1920.1016/3840.0.1920.1080@3840.0.1920.1080" timestamp="1581908182333" />
+    <state width="1874" height="336" key="GridCell.Tab.1.right" timestamp="1581908182334">
+      <screen x="3840" y="0" width="1920" height="1080" />
+    </state>
+    <state width="937" height="325" key="GridCell.Tab.1.right/0.27.1920.1016@0.27.1920.1016" timestamp="1581904565530" />
+    <state width="1874" height="336" key="GridCell.Tab.1.right/1920.0.1920.1080/0.27.1920.1016/3840.0.1920.1080@3840.0.1920.1080" timestamp="1581908182334" />
+    <state x="449" y="170" width="1022" height="737" key="SettingsEditor" timestamp="1581886274987">
+      <screen x="0" y="27" width="1920" height="1016" />
+    </state>
+    <state x="449" y="170" width="1022" height="737" key="SettingsEditor/0.27.1920.1016@0.27.1920.1016" timestamp="1581886274987" />
+    <state x="616" y="362" key="com.intellij.ide.util.TipDialog" timestamp="1581886219719">
+      <screen x="0" y="27" width="1920" height="1016" />
+    </state>
+    <state x="616" y="362" key="com.intellij.ide.util.TipDialog/0.27.1920.1016@0.27.1920.1016" timestamp="1581886219718" />
+    <state x="624" y="225" width="662" height="627" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1581901782231">
+      <screen x="0" y="27" width="1920" height="1016" />
+    </state>
+    <state x="624" y="225" width="662" height="627" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1016@0.27.1920.1016" timestamp="1581901782231" />
+    <state x="623" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1581889650736">
+      <screen x="0" y="27" width="1920" height="1016" />
+    </state>
+    <state x="623" y="250" width="672" height="678" key="search.everywhere.popup/0.27.1920.1016@0.27.1920.1016" timestamp="1581889650736" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Lexer.py</url>
+          <line>72</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PythonLexer$Lexer.coverage" NAME="Lexer Coverage Results" MODIFIED="1581908181871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
