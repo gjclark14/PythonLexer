@@ -27,14 +27,14 @@ class Token:
 
 class Lexer:
     table = [
-        #    L  D  S  O    state                   idx backup
+        #L  D  S  O    state                   idx backup
         [1, 3, 5, 6],  # starting state     0   P with 2 should be a non back up state
         [1, 1, 2, 2],  # in identifier      1
         [0, 0, 0, 0],  # end identifier     2   y
         [4, 3, 4, 4],  # in number          3
         [0, 0, 0, 0],  # end number         4   n
         [0, 0, 0, 0],  # end separator      5
-        [0, 0, 0, 0]  # end operator       6
+        [0, 0, 0, 0]   # end operator       6
     ]
 
     finalStates = [2, 4, 5, 6]
@@ -76,6 +76,19 @@ class Lexer:
         while i < LEN:
             char = string[i]
 
+            if(char == '!'):
+                i += 1
+                char = string[i]
+                while( i < LEN and char != '!'):
+                    char = string[i]
+                    i += 1
+                continue
+
+            if char == '.' and state == 3:
+                lexeme += char
+                i += 1
+                continue
+
             col = Lexer.charToCol(char)
             state = Lexer.table[state][col]
 
@@ -83,16 +96,16 @@ class Lexer:
                 i, lexeme, state = self.handleIdentifier(char, col, i, lexeme, state)
                 continue
 
-            if (state == FinalStates.number.value):
+            if state == FinalStates.number.value:
                 i, lexeme, state = self.handleDigit(char, col, i, lexeme, state)
-                continue
-
-            if (state == FinalStates.separator.value):
-                i, lexeme, state = self.handleSeparator(char, i, lexeme, state)
                 continue
 
             if (state == FinalStates.operator.value):
                 i, lexeme, state = self.handleOperator(char, i, lexeme, state)
+                continue
+
+            if (state == FinalStates.separator.value):
+                i, lexeme, state = self.handleSeparator(char, i, lexeme, state)
                 continue
 
             lexeme += char
@@ -110,6 +123,8 @@ class Lexer:
         if not char.isspace():
             self.addToken("SEPARATOR", char)
             logging.info("SEPARATOR: " + char)
+
+
         state = 0
         lexeme = ""
         i += 1
@@ -149,6 +164,8 @@ class Lexer:
         lexeme = ""
         return i, lexeme, state
 
+
+
     def doSpaces(self, LEN, i, lexeme, state, string):
         state = 0
         logging.info(lexeme)
@@ -165,9 +182,10 @@ if __name__ == '__main__':
 
     # l.nextState("i= 9; ")
     str1 = "int num1, num2, large$\nif(num1 > num2)\n{\n\tlarge = num1$;\n}\nelse\n{\n\tlarge = num2$;\n }"
-    str2 = "int number;\nnumber = 9; "
+    str2 = "\nint number;\nnumber = 9.0;\n! Declare and assign a number ! "
     str3 = "n =2; {i=4;} "
-    l.lex(str1)
+    str4 = "2 "
+    l.lex(str4)
 
     for token in l.tokens:
         print(token)
