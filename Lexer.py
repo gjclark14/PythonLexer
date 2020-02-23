@@ -10,7 +10,6 @@ class FinalStates(Enum):
     separator   = 5
     operator    = 6
 
-
 class TokenLiterals:
     KEYWORDS = {"int", "float", "bool", "true", "false", "if", "else", "then", "endif", "while", "whileend", "do",
                 "doend", "for", "forend", "input", "output", "and", "or", "not"}
@@ -93,25 +92,25 @@ class Lexer:
             state = Lexer.table[state][col]
 
             if (state == FinalStates.identifier.value):
-                i, lexeme, state = self.handleIdentifier(char, col, i, lexeme, state)
+                i, lexeme, state = self.handleIdentifier(char, col, i, lexeme)
                 continue
 
             if state == FinalStates.number.value:
-                i, lexeme, state = self.handleDigit(char, col, i, lexeme, state)
+                i, lexeme, state = self.handleDigit(char, col, i, lexeme)
                 continue
 
             if (state == FinalStates.operator.value):
-                i, lexeme, state = self.handleOperator(char, i, lexeme, state)
+                i, lexeme, state = self.handleOperator(char, i)
                 continue
 
             if (state == FinalStates.separator.value):
-                i, lexeme, state = self.handleSeparator(char, i, lexeme, state)
+                i, lexeme, state = self.handleSeparator(char, i)
                 continue
 
             lexeme += char
             i += 1
 
-    def handleOperator(self, char, i, lexeme, state):
+    def handleOperator(self, char, i):
         self.addToken("OPERATOR", char)
         logging.info("OPERATOR: " + char)
         state = 0
@@ -119,7 +118,7 @@ class Lexer:
         i += 1
         return i, lexeme, state
 
-    def handleSeparator(self, char, i, lexeme, state):
+    def handleSeparator(self, char, i):
         if not char.isspace():
             self.addToken("SEPARATOR", char)
             logging.info("SEPARATOR: " + char)
@@ -130,7 +129,7 @@ class Lexer:
         i += 1
         return i, lexeme, state
 
-    def handleDigit(self, char, col, i, lexeme, state):
+    def handleDigit(self, char, col, i, lexeme):
         self.addToken("NUMBER", lexeme)
         logging.info("NUMBER: " + lexeme)
         # do essentially the same thing that  the identifier is doing with se
@@ -145,7 +144,7 @@ class Lexer:
         i += 1
         return i, lexeme, state
 
-    def handleIdentifier(self, char, col, i, lexeme, state):
+    def handleIdentifier(self, char, col, i, lexeme):
         if (lexeme in TokenLiterals.KEYWORDS):
             self.addToken("KEYWORD", lexeme)
             logging.info("KEYWORD: " + lexeme)
@@ -166,7 +165,7 @@ class Lexer:
 
 
 
-    def doSpaces(self, LEN, i, lexeme, state, string):
+    def doSpaces(self, LEN, i, lexeme, string):
         state = 0
         logging.info(lexeme)
         lexeme = ""
@@ -185,7 +184,7 @@ if __name__ == '__main__':
     str2 = "\nint number;\nnumber = 9.0;\n! Declare and assign a number ! "
     str3 = "n =2; {i=4;} "
     str4 = "2 "
-    l.lex(str4)
+    l.lex(str2)
 
     for token in l.tokens:
         print(token)
