@@ -1,0 +1,17 @@
+readln (a, b, c);
+s := (a + b + c)/2.0;
+area := sqrt(s * (s - a)*(s-b)*(s-c));
+writeln(area);
+type
+   Rectangle = class
+   private
+      length, width: integer;
+
+   public
+      constructor create(l, w: integer);
+      procedure setlength(l: integer);
+      function getlength(): integer;
+      procedure setwidth(w: integer);
+      function getwidth(): integer;
+      procedure draw;
+end;

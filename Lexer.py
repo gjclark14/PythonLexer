@@ -110,6 +110,23 @@ class Lexer:
             lexeme += char
             i += 1
 
+            if i == LEN:
+                if (state == FinalStates.identifier.value):
+                    i, lexeme, state = self.handleIdentifier(char, col, i, lexeme)
+                    continue
+
+                if state == FinalStates.number.value:
+                    i, lexeme, state = self.handleDigit(char, col, i, lexeme)
+                    continue
+
+                if (state == FinalStates.operator.value):
+                    i, lexeme, state = self.handleOperator(char, i)
+                    continue
+
+                if (state == FinalStates.separator.value):
+                    i, lexeme, state = self.handleSeparator(char, i)
+                    continue
+
     def handleOperator(self, char, i):
         self.addToken("OPERATOR", char)
         logging.info("OPERATOR: " + char)
@@ -164,7 +181,6 @@ class Lexer:
         return i, lexeme, state
 
 
-
     def doSpaces(self, LEN, i, lexeme, string):
         state = 0
         logging.info(lexeme)
@@ -182,10 +198,14 @@ if __name__ == '__main__':
     # l.nextState("i= 9; ")
     str1 = "int num1, num2, large$\nif(num1 > num2)\n{\n\tlarge = num1$;\n}\nelse\n{\n\tlarge = num2$;\n }"
     str2 = "\nint number;\nnumber = 9.0;\n! Declare and assign a number ! "
-    str3 = "n =2; {i=4;} "
+    str3 = "n =2; {i=4;}"
     str4 = "2 "
-    l.lex(str2)
+
+    with open('inputFile.txt', 'r') as file:
+        finString = file.read().replace('\n', '')
+
+
+    l.lex(finString)
 
     for token in l.tokens:
         print(token)
-
